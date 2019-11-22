@@ -66,11 +66,11 @@ const (
 // &+变量名 用来获取内存地址，使用 *+变量名 定义的对象来接收（此时用*运算接收后的对象，会变成变量的值，而不再是一个指针）
 var ptr *bool
 
-func main() {
-	//newObj()
-	//editObj()
-	logic1()
-}
+//func main() {
+//	//newObj()
+//	//editObj()
+//	logic1()
+//}
 
 //对象的声明
 func newObj() {
@@ -181,6 +181,7 @@ func logic1() {
 	//		fmt.Println()
 	//}
 
+	//select 语句类似于 switch 语句，但是select会随机执行一个可运行的case。如果没有case可运行，它将阻塞，直到有case可运行。
 	var c1, c2, c3 chan int
 	var i1, i2 int
 	select {
